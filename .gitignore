@@ -1,0 +1,11 @@
+.vercel
+.venv
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.idea/
+.vscode/
+build/
+dist/
+*.egg-info/
