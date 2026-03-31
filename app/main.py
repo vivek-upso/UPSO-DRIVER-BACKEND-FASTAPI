@@ -22,6 +22,7 @@ app.add_middleware(
 # ---------------- STARTUP ----------------
 @app.on_event("startup")
 async def startup_event():
+    await init_mongo()
     asyncio.create_task(start_order_socket())
 
     print(" Order socket client started")

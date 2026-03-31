@@ -1,9 +1,10 @@
 from datetime import datetime
-from app.core.mongo import db
+from app.core.mongo import get_db
 import asyncio
 
 async def check_mongo():
     try:
+        db = get_db()
         await db.command("ping")
         return {"status": "up"}
     except Exception as e:
