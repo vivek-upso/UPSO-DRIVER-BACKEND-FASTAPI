@@ -1,11 +1,32 @@
-.vercel
-.venv
+# Python cache
 __pycache__/
 *.py[cod]
 *$py.class
+*.egg-info/
+
+# Environment variables
 .env
-.idea/
-.vscode/
+
+# Virtual environment
+.venv/
+myenv/
+env/
+venv/
+ENV/
+
+# Build and Distribution
 build/
 dist/
-*.egg-info/
+
+# IDE files
+.idea/
+.vscode/
+
+# Vercel
+.vercel/
+
+# Firebase service account (security sensitive)
+firebase-service-account.json
+
+# Other
+8.0.0/
